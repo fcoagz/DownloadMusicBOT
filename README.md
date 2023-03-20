@@ -11,7 +11,7 @@ Faltan algunas cosas por mejorar! Aunque se puede ejecutar con éxito.
 - 😎 ¡disfrute!
 
 ## Variable de entorno
-- `TOKEN`: Telegram bot token
+- `TOKEN in ./configbot.json`: Telegram bot token
 - `USER`: Cree un diccionario para el message.text que el usuario enviará (URL)
 
 ## Licencia

@@ -1,11 +1,15 @@
 import telebot
 import os
+import json
 import time
 from shutil import rmtree
 from pytube import YouTube
 import yt_dlp
 
-dp = telebot.TeleBot('TOKEN', parse_mode='HTML')
+with open('./configbot.json') as archive:
+    botInfo = json.load(archive)
+
+dp = telebot.TeleBot(botInfo["TOKEN"], parse_mode='HTML')
 
 filePath = os.getcwd() + '/data/user/'
 
